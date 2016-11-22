@@ -1,21 +1,115 @@
+// Microsoft Visual C++ generated resource script.
+//
 #include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
 
-I ICON "zWinSock.ico"
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
 
-D DIALOG 21, 13, 640, 467
-STYLE 0x94C801C5 | 0x00020000 // WS_MINIMIZEBOX
-CAPTION "zWinSock"
-FONT 9, "宋体"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+I                       ICON                    "zWinSock.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+D DIALOGEX 21, 13, 376, 271
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU
+CAPTION "Socket Chat Room v1.0 Beta"
+FONT 9, "Microsoft YaHei UI Light", 290, 0, 0x0
 BEGIN
-	LTEXT			"昵称",			ID_STATIC,	534,   5,  18,   9
-	COMBOBOX						ID_NAME,	550,   3,  89, 144, 0x200002 // WS_VSCROLL | CBS_DROPDOWN
-	LTEXT			"地址",			ID_STATIC,	534,  19,  18,   9
-	EDITTEXT						ID_ADDR,	550,  17,  89,  13, 0x80 // ES_AUTOHSCROLL
-	PUSHBUTTON		"创建服务器",	ID_SERVER,	534,  31,  52,  15 // , 0x0B // BS_OWNERDRAW
-	PUSHBUTTON		"连接服务器",	ID_CLIENT,	587,  31,  52,  15
-	PUSHBUTTON		"断开服务器",	ID_CLOSE,	534,  47, 105,  15
-	LISTBOX							ID_LIST,	534,  65, 105, 120
-	EDITTEXT						ID_INFO,	534, 187, 105, 260, 0x50200904 // ES_NOHIDESEL | ES_READONLY | ES_MULTILINE
-	EDITTEXT						ID_CHAT,	534, 450,  83,  13, 0x80 // ES_AUTOHSCROLL
-	DEFPUSHBUTTON	"发送",			ID_SEND,	618, 449,  21,  15
+    LTEXT           "User Name",ID_STATIC,7,8,44,9
+    COMBOBOX        ID_NAME,46,6,94,144,CBS_DROPDOWN | WS_VSCROLL
+    LTEXT           "Room ID",ID_STATIC,7,22,41,9
+    EDITTEXT        ID_ADDR,46,19,94,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Create Room",ID_SERVER,6,47,135,15,BS_FLAT
+    PUSHBUTTON      "Join Room",ID_CLIENT,6,63,135,15,BS_FLAT
+    PUSHBUTTON      "Quit Room",ID_CLOSE,6,79,135,15,BS_FLAT
+    LISTBOX         ID_LIST,6,106,135,165
+    EDITTEXT        ID_INFO,145,6,223,243,ES_MULTILINE | ES_NOHIDESEL | ES_READONLY | WS_VSCROLL,WS_EX_TRANSPARENT
+    EDITTEXT        ID_CHAT,144,253,176,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Send",ID_SEND,322,252,46,15,BS_FLAT
+    EDITTEXT        ID_PORT,46,33,94,13,ES_AUTOHSCROLL
+    LTEXT           "Room PWD",ID_STATIC,7,35,38,11
+    LTEXT           "Current friends:",ID_STATIC,7,97,134,8
 END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    "D", DIALOG
+    BEGIN
+        RIGHTMARGIN, 374
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 270
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+D AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
